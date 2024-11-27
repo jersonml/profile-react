@@ -4,9 +4,21 @@ export const RoutesText = {
       path: '/',
       label: 'Inicio',
     },
-    about: {
-      path: '/about',
-      label: 'Acerca de',
+    experience: {
+      path: '/experience',
+      label: 'Experiencia',
+    },
+    course: {
+      path: '/course',
+      label: 'Cursos',
+    },
+    skills: {
+      path: '/skills',
+      label: 'Habilidades',
+    },
+    contact: {
+      path: '/contact',
+      label: 'Contacto'
     },
     notFound: {
       path: '*',
