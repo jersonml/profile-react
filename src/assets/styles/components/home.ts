@@ -54,15 +54,22 @@ export  const StyleRightBlock = styled(Box)( ({
   
 }));
 
-export  const StyleCenterButton = styled(Button)(({ theme }) => ({
-  marginTop: theme.spacing(4),
-  padding: theme.spacing(2, 4),
-  fontSize: '1rem',
-  fontWeight: 'bold',
+export const StyleCenterButton = styled(Button)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
-  borderRadius: '8px',
+  color: '#fff',
+  fontSize: '18px',
+  fontWeight: 'bold',
+  padding: '12px 24px',
+  borderRadius: '25px',
+  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
+  transition: 'all 0.3s ease',
+  marginTop: '30px', // Ajustar el margen superior para que quede debajo del texto
   '&:hover': {
     backgroundColor: theme.palette.primary.dark,
+    transform: 'scale(1.05)',
+    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)', // Efecto de sombra en hover
+  },
+  '&:active': {
+    transform: 'scale(0.98)',
   },
 }));
