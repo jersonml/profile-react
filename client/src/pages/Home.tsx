@@ -1,45 +1,45 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-import { Container, Typography, Box } from "@mui/material";
-import Layout from "../components/Layout";
+import { Typography } from "@mui/material";
+import {
+  StyleCenterButton,
+  StyleContainer,
+  StyleLeftBlock,
+  StyleRightBlock,
+  StyleTopSection,
+} from "../assets/styles/components/home";
+import { useNavigate } from "react-router-dom";
+import Presentation from "../assets/images/presentation-jerson.webp";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
-    <Layout>
-      <Container maxWidth="md" sx={{ my: 4 }}>
-        <Box sx={{ textAlign: "center", my: 4 }}>
-          <Typography variant="h4" gutterBottom>
-            Bienvenido a Mi Portafolio
+    <StyleContainer>
+      {/* Sección superior */}
+      <StyleTopSection>
+        {/* Bloque izquierdo */}
+        <StyleLeftBlock>
+          <Typography variant="h4" component="h1" gutterBottom>
+            ¡Hola! 👋 Soy [Tu Nombre]
           </Typography>
-          <Typography variant="body1">
-            Aquí encontrarás información sobre mi experiencia, habilidades y
-            cómo contactarme.
+          <Typography variant="body1" color="text.secondary">
+            Soy un desarrollador apasionado por construir aplicaciones modernas
+            y elegantes. Bienvenido a mi portafolio, donde encontrarás
+            información sobre mis proyectos, habilidades y experiencia.
           </Typography>
-        </Box>
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h5" gutterBottom>
-            Experiencia
-          </Typography>
-          <Experience />
-        </Box>
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h5" gutterBottom>
-            Habilidades
-          </Typography>
-          <Skills />
-        </Box>
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h5" gutterBottom>
-            Contacto
-          </Typography>
-          <Contact />
-        </Box>
-      </Container>
-      {/* <Footer /> */}
-    </Layout>
+        </StyleLeftBlock>
+
+        {/* Bloque derecho */}
+        <StyleRightBlock>
+          <img src={Presentation} alt="Representativo" />
+        </StyleRightBlock>
+      </StyleTopSection>
+
+      {/* Botón central */}
+      <StyleCenterButton onClick={() => navigate("/experience")}>
+        Ver Experiencia
+      </StyleCenterButton>
+    </StyleContainer>
   );
 };
 

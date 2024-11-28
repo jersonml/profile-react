@@ -19,7 +19,7 @@ const lightTheme = createTheme({
       default: Colors.BackgroundLight,
       paper: Colors.PaperLight,
     },
-  },
+  }
 });
 
 const darkTheme = createTheme({
@@ -39,7 +39,7 @@ const darkTheme = createTheme({
       default: Colors.BackgroundDark,
       paper: Colors.PaperDark,
     },
-  },
+  }
 });
 
 export { lightTheme, darkTheme };

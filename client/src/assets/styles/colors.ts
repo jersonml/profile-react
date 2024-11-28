@@ -7,8 +7,9 @@ export const Colors = {
   SecondaryLight: '#ff5c8d', // Color secundario claro
   SecondaryDark: '#9a0036', // Color secundario oscuro
   ButtonColor: '#ffffff', // Color del texto del botón
-  BackgroundLight: '#ffffff', // Fondo para el tema claro
-  BackgroundDark: '#121212', // Fondo para el tema oscuro
+  BackgroundLight: "linear-gradient(45deg, #ffffff, #f1f1f1, #e0e0e0, #d0d0d0)", // Fondo para el tema claro
+  BackgroundDark:"linear-gradient(45deg, #000000, #003366, #1E2A47, #4B5A6B)", // Gradiente de tonos oscuros  , // Fondo para el tema oscuro
   PaperLight: '#f5f5f5', // Color de papel para el tema claro
   PaperDark: '#1e1e1e', // Color de papel para el tema oscuro
+  TextPrimary: "#000000", // Texto para modo claro
 };
