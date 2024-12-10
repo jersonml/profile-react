@@ -1,21 +1,26 @@
-import React from 'react';
-import { Chip, Box, Typography } from '@mui/material';
+import React from "react";
+import {
+  StyledSkillTitle,
+  StyledSlider,
+} from "../assets/styles/components/skill";
+import { Box } from "@mui/material";
 
-const skills = ['React', 'TypeScript', 'Material-UI', 'Node.js', 'CSS', 'Vite'];
+interface SkillProps {
+  name: string;
+  value: number;
+}
 
-const Skills: React.FC = () => {
-    return (
-        <Box sx={{ textAlign: 'center', my: 4 }}>
-            <Typography variant="h5" gutterBottom>
-                Habilidades Técnicas
-            </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, justifyContent: 'center' }}>
-                {skills.map((skill, index) => (
-                    <Chip key={index} label={skill} color="primary" />
-                ))}
-            </Box>
-        </Box>
-    );
+const Skill: React.FC<SkillProps> = ({ name, value }) => {
+  return (
+    <Box sx={{ m: 1 }}>
+      <StyledSkillTitle gutterBottom>{name}</StyledSkillTitle>
+      <StyledSlider
+        valueLabelDisplay="auto"
+        aria-label="pretto slider"
+        defaultValue={value}
+      />
+    </Box>
+  );
 };
 
-export default Skills;
+export default Skill;
