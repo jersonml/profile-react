@@ -24,7 +24,6 @@ const Navbar: React.FC = () => {
     { path: RoutesText.course.path, label: RoutesText.course.label },
     { path: RoutesText.skills.path, label: RoutesText.skills.label },
     { path: RoutesText.proyect.path, label: RoutesText.proyect.label },
-    { path: RoutesText.contact.path, label: RoutesText.contact.label },
   ];
 
   return (

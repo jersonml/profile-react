@@ -24,10 +24,6 @@ export const RoutesText = {
       path: '/proyect',
       label: 'Proyectos',
     },
-    contact: {
-      path: '/contact',
-      label: 'Contacto'
-    },
     notFound: {
       path: '*',
       label: 'Página no encontrada',

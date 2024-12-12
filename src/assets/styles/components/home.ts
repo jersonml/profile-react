@@ -16,7 +16,7 @@ export const StyleContainer = styled(Box)(({ theme }) => ({
 
 export  const StyleTopSection = styled(Box)({
   display: 'flex',
-  flex: 1,
+  // flex: 1,
   width: '100%',
 });
 

@@ -14,7 +14,6 @@ const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path={RoutesText.home.path} element={<Home />} />
-      {/* <Route path={RoutesText.about.path} element={<About />} /> */}
       <Route path={RoutesText.notFound.path} element={<NotFound />} />
       <Route
         path={RoutesText.experience.path}
