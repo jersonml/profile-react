@@ -7,7 +7,7 @@ import { styled } from '@mui/system';
 export const StyleContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  justifyContent: 'center',
   alignItems: 'center',
   height: '100vh',
   padding: theme.spacing(2),

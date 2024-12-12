@@ -8,6 +8,10 @@ export const RoutesText = {
       path: '/experience',
       label: 'Experiencia',
     },
+    education: {
+      path: '/education',
+      label: 'Educación',
+    },
     course: {
       path: '/course',
       label: 'Cursos',
@@ -15,6 +19,10 @@ export const RoutesText = {
     skills: {
       path: '/skills',
       label: 'Habilidades',
+    },
+    proyect: {
+      path: '/proyect',
+      label: 'Proyectos',
     },
     contact: {
       path: '/contact',

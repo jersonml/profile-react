@@ -19,6 +19,33 @@ export const StyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 
+export const StyledCardExperience = styled(Card)(({ theme }) => ({
+  maxWidth: 700,
+  boxShadow: theme.shadows[3],
+  borderRadius: theme.shape.borderRadius,
+  color: "#ffffff",
+  padding: theme.spacing(3),
+  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+  "&:hover": {
+    transform: "scale(1.05)",
+    boxShadow: theme.shadows[6],
+  },
+  alignItems: "center"
+}));
+
+export const StyleEducationTitle = styled(Typography)(({ theme }) => ({
+  color: "#00bcd4",
+  fontWeight: "bold",
+  fontSize: theme.typography.h5.fontSize,
+  marginBottom: theme.spacing(1),
+}));
+
+
+export const StyleEducationSubtitle = styled(Typography)(({ theme }) => ({
+  color: theme.palette.text.secondary,
+  fontStyle: "italic",
+  marginBottom: theme.spacing(1.5),
+}));
 
 
 // Estilos para el título (Typography)
