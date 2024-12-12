@@ -63,7 +63,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
           </StyledChipContainer>
         </CardContent>
         <CardActions>
-          <StyledButton size="small" color="primary" to="">
+          <StyledButton size="small" variant="contained" to="">
             {CardText.showCredentials}
           </StyledButton>
         </CardActions>

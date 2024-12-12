@@ -8,6 +8,7 @@ type StyledButtonProps = ButtonProps & LinkProps;
 export const StyledButton = styled(Button)<StyledButtonProps>(({ theme }) => ({
     color: Colors.ButtonColor,
     transition: "all 0.3s ease", // Transición para un efecto suave
+    backgroundColor:"primary",
     "&:hover": {
       backgroundColor:
         theme.palette.mode === "light"
