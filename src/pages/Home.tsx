@@ -77,7 +77,8 @@ const Home: React.FC = () => {
               }}
             >
               <Typography variant="body1" color="text.secondary">
-                <LinkedInIcon>{HomeText.linkedin}</LinkedInIcon>
+                <LinkedInIcon></LinkedInIcon>
+                {HomeText.linkedin}
               </Typography>
             </Link>
           </Grid>
@@ -93,7 +94,8 @@ const Home: React.FC = () => {
               }}
             >
               <Typography variant="body1" color="text.secondary">
-                <EmailIcon> {HomeText.email}</EmailIcon>
+                <EmailIcon></EmailIcon>
+                {HomeText.email}
               </Typography>
             </Link>
           </Grid>
@@ -110,7 +112,8 @@ const Home: React.FC = () => {
               }}
             >
               <Typography variant="body1" color="text.secondary">
-                <PhoneIcon>{HomeText.phone}</PhoneIcon>
+                <PhoneIcon></PhoneIcon>
+                {HomeText.phone}
               </Typography>
             </Link>
           </Grid>
