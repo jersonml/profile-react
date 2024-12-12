@@ -6,5 +6,7 @@ export const HomeText = {
     linkedin: 'https://www.linkedin.com/in/jersonml/',
     email: 'xljersonlx@gmail.com',
     phone: '+584129998766',
-    country: '🇻🇪 Venezuela'
+    country: '🇻🇪 Venezuela',
+    gitlab: 'https://gitlab.com/JersonAML',
+    github: 'https://github.com/jersonml'
   };

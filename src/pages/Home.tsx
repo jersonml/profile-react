@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid2";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import {
   StyleCenterButton,
   StyleContainer,
@@ -58,71 +59,111 @@ const Home: React.FC = () => {
           variant="h3"
           gutterBottom
           textAlign="center"
-          // sx={{ marginBottom: 4, color: "#333" }}
+          sx={{ marginBottom: 4 }}
         >
           {HomeText.subTitle}
         </Typography>
-        <Grid container spacing={3} justifyContent="center" paddingLeft={25}>
-          {/* LinkedIn */}
-          <Grid size={{ xs: 12, sm: 6 }}>
+        <Grid container spacing={3}>
+          {/* Columna izquierda */}
+          <Grid
+            size={{ xs: 12, sm: 6 }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 2,
+            }}
+          >
+            {/* LinkedIn */}
             <Link
               href={HomeText.linkedin}
               target="_blank"
               underline="hover"
               sx={{
                 fontSize: "1.2rem",
-                display: "block",
-                // color: "#0073b1",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
                 "&:hover": { color: "#005582" },
               }}
             >
+              <LinkedInIcon fontSize="large" />
               <Typography variant="body1" color="text.secondary">
-                <LinkedInIcon></LinkedInIcon>
                 {HomeText.linkedin}
               </Typography>
             </Link>
-          </Grid>
-          {/* Email */}
-          <Grid size={{ xs: 12, sm: 6 }}>
+            {/* Teléfono */}
             <Link
-              href="mailto:tu-email@ejemplo.com"
+              href={`tel:${HomeText.phone}`}
               underline="hover"
               sx={{
                 fontSize: "1.2rem",
-                display: "block",
-                "&:hover": { color: "#b71c1c" },
-              }}
-            >
-              <Typography variant="body1" color="text.secondary">
-                <EmailIcon></EmailIcon>
-                {HomeText.email}
-              </Typography>
-            </Link>
-          </Grid>
-          {/* Teléfono */}
-          <Grid size={{ xs: 12, sm: 6 }}>
-            <Link
-              href="tel:+1234567890"
-              underline="hover"
-              sx={{
-                fontSize: "1.2rem",
-                display: "block",
-                color: "#388e3c",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
                 "&:hover": { color: "#2e7d32" },
               }}
             >
+              <PhoneIcon fontSize="large" color={"action"} />
               <Typography variant="body1" color="text.secondary">
-                <PhoneIcon></PhoneIcon>
                 {HomeText.phone}
               </Typography>
             </Link>
+            {/* GitLab */}
+            <Link
+              href={HomeText.gitlab}
+              target="_blank"
+              underline="hover"
+              sx={{
+                fontSize: "1.2rem",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+                "&:hover": { color: "#000" },
+              }}
+            >
+              <GitHubIcon fontSize="large" color={"action"} />
+              <Typography variant="body1" color="text.secondary">
+                {HomeText.gitlab}
+              </Typography>
+            </Link>
           </Grid>
-          {/* País */}
-          <Grid size={{ xs: 12, sm: 6 }}>
+
+          {/* Columna derecha */}
+          <Grid
+            size={{ xs: 12, sm: 6 }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+              gap: 2,
+            }}
+          >
+            {/* Email */}
+            <Link
+              href={`mailto:${HomeText.email}`}
+              underline="hover"
+              sx={{
+                fontSize: "1.2rem",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+                "&:hover": { color: "#b71c1c" },
+              }}
+            >
+              <EmailIcon fontSize="large" color={"action"} />
+              <Typography variant="body1" color="text.secondary">
+                {HomeText.email}
+              </Typography>
+            </Link>
+            {/* País */}
             <Typography
               variant="body1"
               sx={{
                 fontSize: "1.2rem",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
                 color: "#666",
               }}
             >
@@ -130,6 +171,24 @@ const Home: React.FC = () => {
                 {HomeText.country}
               </Typography>
             </Typography>
+            {/* GitHub */}
+            <Link
+              href={HomeText.github}
+              target="_blank"
+              underline="hover"
+              sx={{
+                fontSize: "1.2rem",
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+                "&:hover": { color: "#000" },
+              }}
+            >
+              <GitHubIcon fontSize="large" color={"action"} />
+              <Typography variant="body1" color="text.secondary">
+                {HomeText.gitlab}
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
       </Box>
