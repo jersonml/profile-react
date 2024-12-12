@@ -4,7 +4,6 @@ import Grid from "@mui/material/Grid2";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
-import FlagIcon from "@mui/icons-material/Flag";
 import {
   StyleCenterButton,
   StyleContainer,
