@@ -18,7 +18,14 @@ interface CourseListProps {
 
 const CourseList: React.FC<CourseListProps> = ({ courses }) => {
   return (
-    <Grid container spacing={2} sx={{ padding: 2 }}>
+    <Grid
+      container
+      spacing={6}
+      sx={{
+        padding: 1,
+        justifyContent: "center",
+      }}
+    >
       {courses.map((course, index) => (
         <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
           <CourseCard {...course} />

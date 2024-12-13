@@ -7,7 +7,6 @@ import Home from "../pages/Home";
 import ExperienceTimeline from "../pages/Experience";
 import Course from "../pages/Course";
 import SkillsPage from "../pages/Skills";
-import EducationPage from "../pages/Education";
 import ProjectsPage from "../pages/Proyect";
 
 const AppRoutes: React.FC = () => {
@@ -21,7 +20,6 @@ const AppRoutes: React.FC = () => {
       />
       <Route path={RoutesText.course.path} element={<Course />} />
       <Route path={RoutesText.skills.path} element={<SkillsPage />} />
-      <Route path={RoutesText.education.path} element={<EducationPage />} />
       <Route path={RoutesText.proyect.path} element={<ProjectsPage />} />
     </Routes>
   );

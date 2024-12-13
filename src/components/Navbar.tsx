@@ -19,7 +19,6 @@ const Navbar: React.FC = () => {
 
   const routes = [
     { path: RoutesText.home.path, label: RoutesText.home.label },
-    { path: RoutesText.education.path, label: RoutesText.education.label },
     { path: RoutesText.experience.path, label: RoutesText.experience.label },
     { path: RoutesText.course.path, label: RoutesText.course.label },
     { path: RoutesText.skills.path, label: RoutesText.skills.label },

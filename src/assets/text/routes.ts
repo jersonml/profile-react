@@ -8,10 +8,6 @@ export const RoutesText = {
       path: '/experience',
       label: 'Experiencia',
     },
-    education: {
-      path: '/education',
-      label: 'Educación',
-    },
     course: {
       path: '/course',
       label: 'Cursos',

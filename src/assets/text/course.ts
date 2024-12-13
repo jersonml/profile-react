@@ -1,12 +1,18 @@
 import Platzi from "../images/platzi.webp";
 import Aws from "../images/aws.webp";
+import Unexpo from "../images/unexpo.webp";
+
+export const couseText = {
+  education: "Educación",
+  course: "Licenses & Certifications"
+}
 
 export const courses = [
   {
     title: 'AWS Partner: Accreditation (Technical)',
     platform: 'Amazon Web Services (AWS)',
     date: 'Aug 2022',
-    credentialId: 'example-aws-credential-id',
+    credentialId: '',
     skills: ['Issue Resolution', 'Research'], 
     link: 'https://www.credly.com/badges/98f540a8-6218-4496-9e31-cba2d68e398c/linked_in_profile', 
     image: Aws, 
@@ -119,4 +125,19 @@ export const courses = [
     link: 'https://platzi.com/p/jerson.moreno/curso/1807-scope/diploma/detalle/',
     image: Platzi,
   },
+];
+
+
+
+export const education = [
+  {
+    title: 'Universidad Nacional Experimental Politécnica Antonio José de Sucre',
+    platform: 'Ingeniería, Ingeniería de Sistemas',
+    date: 'Nov. 2016 - Dic. 2023',
+    credentialId: '',
+    skills: ['Resolución de problemas', 'Trabajar bajo presión','Lógica', '...'], 
+    link: 'https://sportyeah-dev.s3.eu-west-1.amazonaws.com/media/tmp/T%C3%ADtulo+Jerson.pdf', 
+    image: Unexpo, 
+  }
+
 ];
