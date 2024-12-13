@@ -13,11 +13,14 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ name, value }) => {
   return (
     <Box sx={{ m: 1 }}>
-      <StyledSkillTitle gutterBottom>{name}</StyledSkillTitle>
+      <StyledSkillTitle gutterBottom>
+        {name}: {value}%
+      </StyledSkillTitle>
       <StyledSlider
         valueLabelDisplay="auto"
         aria-label="pretto slider"
         defaultValue={value}
+        disabled
       />
     </Box>
   );

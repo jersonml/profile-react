@@ -10,7 +10,7 @@ export const RoutesText = {
     },
     course: {
       path: '/course',
-      label: 'Cursos',
+      label: 'Formación y Cursos',
     },
     skills: {
       path: '/skills',
